@@ -7,6 +7,47 @@ This research project investigates the longitudinal relationship between broadba
 1. How do changes in county-level broadband internet adoption rates relate to changes in diabetes prevalence over time?
 2. What intermediary factors (healthcare access, health behaviors, social support) mediate this relationship?
 
+## Project Structure
+```
+.
+├── 01_docs/                    # Project documentation
+│   ├── 01.01_manuscripts/     # Manuscript drafts and figures
+│   ├── Project Overview.md    # Detailed project description
+│   └── requirements.txt       # Python dependencies
+├── 02_data/                   # Data files
+│   ├── 02.01_raw/            # Raw data files
+│   └── raw_data_info.md      # Data documentation
+├── 03_code/                   # Analysis code
+│   ├── 03.01_data_collection/# Data collection scripts
+│   ├── 03.02_analysis/       # Analysis notebooks
+│   └── 03.03_visualization/  # Visualization code
+└── 04_collaboration/         # Collaboration documentation
+```
+
+## Setup Instructions
+
+1. Create a Python virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+2. Install dependencies:
+```bash
+pip install -r 01_docs/requirements.txt
+```
+
+3. Set up environment variables:
+Create a `.env` file in the root directory with:
+```
+CENSUS_API_KEY=your_key_here
+```
+
+4. Start Jupyter notebook:
+```bash
+jupyter notebook
+```
+
 ## Data Sources
 - American Community Survey (ACS) 5-year estimates (2021-2022)
 - USDA Rural-Urban Commuting Area (RUCA) Codes
@@ -28,34 +69,33 @@ This research project investigates the longitudinal relationship between broadba
 - **Control Variables**: Changes in poverty levels, education, demographics, income, and geographic location
 - **Intermediary Variables**: Changes in healthcare access, health behaviors, and social support measures
 
-## Project Structure
-```
-.
-├── 01_docs/               # Project documentation
-├── 02_data/              # Data files
-├── 03_analysis/          # Analysis scripts and notebooks
-└── 04_output/            # Generated outputs and results
-```
-
 ## Analysis Environment
-- Private GitHub repository for version control and collaboration
-- Python-based analysis using pandas, NumPy, statsmodels, and scikit-learn
+- Python-based analysis using:
+  - pandas & numpy for data manipulation
+  - statsmodels for statistical analysis
+  - scikit-learn for machine learning
+  - matplotlib, seaborn, and plotly for visualization
+  - geopandas for geographic data analysis
 - Jupyter notebooks for reproducible analysis
+- Version control through Git
 
-## Impact
-This research aims to:
-- Inform policies and interventions for increasing internet access
-- Advance understanding of social determinants of health
-- Guide future research on digital health equity
-- Support evidence-based decision making for healthcare infrastructure
+## Research Team
+- Matthew S. Farmer, PhD RN (Primary Investigator)
+- Qingyu Chen, PhD (Mentor)
 
-## References
+## License
+This project is licensed under the terms of the LICENSE file in the root directory.
+
+## Contributing
+Please see `04_collaboration/colab_documentation.md` for contribution guidelines.
+
+## Citation
 For detailed references and citations, please see the full project documentation in `01_docs/Project Overview.md`.
 
 ## FAIR Principles Implementation
 This repository follows FAIR (Findable, Accessible, Interoperable, Reusable) principles:
 
-- **Findable**: DOI: [insert DOI], Published publically online
+- **Findable**: DOI: [pending], Published publicly online
 - **Accessible**: Available via HTTPS through GitHub
 - **Interoperable**: Uses standard file formats and documented APIs
 - **Reusable**: Open-source licensed with complete documentation
@@ -69,15 +109,8 @@ Hypothesis 1:  Counties that experience an increase in broadband internet adopti
 
 Hypothesis 2: The relationship between changes in internet adoption and changes in diabetes prevalence will be partially mediated by changes in intermediary factors such as access to healthcare services (e.g., having a usual source of care), health behaviors (e.g., physical activity, diet), and social support.
 
-## Research Team
-
-Matthew S. Farmer, PhD RN (Primary Investigator)
-Qingyu Chen, PhD (Mentor)
-
 ## Abstract
 
 ## Citation (BibTeX)
-
-## License
 
 ## Acknowledgements
