@@ -125,11 +125,13 @@ Our findings demonstrate that advanced machine learning approaches can robustly 
 Our study demonstrates the influence of broadband internet adoption on diabetes prevalence, while controlling for other social determinants of health. Utilizing advanced machine learning methods, we provide a robust framework for understanding the complex relationship between digital connectivity and diabetes. In public health policy, this research provides evidence for addressing the digital divide as a means to imrprove health outcomes. 
 
 ## Citation (BibTeX)
+```bibtext
 @article{Farmer2025InternetDiabetes,
   title={Diabetes and the Digital Divide: A Longitudinal Study of Diabetes Prevalence in U.S. Counties and its Relationship with Household Internet Adoption},
   author={Matthew S. Farmer and Qingyu Chen},
   year={2025},
   note={Available at: https://github.com/matthewfarmer/internet_diabetes},
 }
+```
 ## Acknowledgements
 The research reported here was supported by University of Missouri, AIM-AHEAD Coordinating Center, award number OTA-21-017, and was, in part, funded by the National Institutes of Health Agreement No. 1OT2OD032581. The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the NIH.
