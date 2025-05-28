@@ -7,17 +7,19 @@
 This research project investigates the longitudinal relationship between broadband internet adoption rates and diabetes prevalence in U.S. counties. The study aims to understand how internet access, as a social determinant of health, influences diabetes outcomes while controlling for other relevant factors.
 ## Abstract
 
-### Objective
-Access to the internet is increasingly recognized as a key social determinant of health, enabling populations to utilize virtual health services, access health information, and engage with social resources. However, the impact of household internet adoption on chronic disease outcomes, such as diabetes prevalence, remains poorly understood at the population level. Our study aims to investigate the relationship between broadband internet adoption rates and diabetes prevalence in U.S. counties, utilizing advanced machine learning techniques to model and predict changes in diabetes prevalence over time.
-### Methodology
+### Background
+Access to the internet is increasingly recognized as a key social determinant of health, enabling populations to utilize virtual health services, access health information, and engage with social resources. However, the impact of household internet adoption on chronic disease outcomes, such as diabetes prevalence, remains poorly understood at the population level.
+
+### Methods
 We conducted a longitudinal, county-level analysis using data from the 2021 and 2022 American Community Survey (ACS) and the CDC’s Behavioral Risk Factor Surveillance System (BRFSS). Our analytic sample included 3,076 U.S. counties. We engineered features to capture both structural and intermediate social determinants of health, including a novel measure of structural internet adoption. The primary outcome was age-adjusted diabetes prevalence. We applied descriptive statistics, two-stage linear regression, and a test of machine learning models to predict changes in diabetes prevalence from 2021 to 2022. After training the models on 2021 data, model performance was evaluated on unseen 2022 data using R², mean squared error (MSE), mean absolute error (MAE), and root mean squared error (RMSE).
+
 ### Results
 The best-performing machine learning model (XGBoost) explained 85% of the variance in county-level changes in diabetes prevalence (R² = 0.85, RMSE = 0.89). Feature importance analysis highlighted household internet adoption, alongside other social determinants, as a significant predictor of diabetes prevalence change. Notably, higher rates of internet adoption were associated with lower diabetes prevalence, even after adjusting for demographic, socioeconomic, and health behavior variables.
-### Conclusion
+
+### Discussion
 Our findings demonstrate that advanced machine learning approaches can robustly model and predict changes in diabetes prevalence at the county level, revealing the critical role of internet adoption as a social determinant of health. These results suggest that policies aimed at closing the digital divide may have meaningful impacts on population health outcomes, particularly for chronic diseases like diabetes. Future research should validate these findings at the individual level and further explore the mechanisms linking digital access to health behaviors and outcomes.
-### Implications
-Our study demonstrates the influence of broadband internet adoption on diabetes prevalence, while controlling for other social determinants of health. Utilizing advanced machine learning methods, we provide a robust framework for understanding the complex relationship between digital connectivity and diabetes. In public health policy, this research provides evidence for addressing the digital divide as a means to imrprove health outcomes. 
-## Citation (BibTeX)
+
+## Suggested Citation (BibTeX)
 ```bibtext
 @article{Farmer2025InternetDiabetes,
   title={Diabetes and the Digital Divide: A Longitudinal Study of Diabetes Prevalence in U.S. Counties and its Relationship with Household Internet Adoption},
